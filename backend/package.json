@@ -21,5 +21,8 @@
     "tsx": "4.19.2",
     "@types/express": "4.17.21",
     "@types/node": "22.10.5"
+  },
+  "allowScripts": {
+    "esbuild@0.23.1": true
   }
 }
