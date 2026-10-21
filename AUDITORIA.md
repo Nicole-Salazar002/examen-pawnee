@@ -19,7 +19,7 @@ El formulario envía ahora `criatura` en ambos casos. Commit: pendiente.
 La prueba HTTP creó un registro temporal con 201; GET del detalle confirmó que persistió asociado a la criatura elegida. Una referencia inexistente devolvió 404. El registro temporal se eliminó después. Falta comprobar el alta desde el formulario React y recargar el navegador.
 
 ### Estado
-Parcial; falta comprobar el alta desde el formulario y la persistencia después de recargar la interfaz.
+Resuelto; el formulario creó el registro, abrió el detalle y la asociación persistió después de recargar
 
 ## A-02 · La lista no identifica a la criatura
 ### Síntoma
@@ -35,7 +35,7 @@ El servicio devolvía la referencia cruda; el helper de React mostraba `ID: ...`
 GET de la lista devolvió cada referencia como objeto poblado con nombre; el filtro sin resultados devolvió total 0. Falta confirmar su presentación visual en React.
 
 ### Estado
-Parcial; API verificada, falta comprobación visual.
+Resuelto; la lista muestra el nombre de cada criatura y una consulta sin resultados presenta el estado vacío sin errores. Se muestra bien visualmente.
 
 ## A-03 · Se acepta un peligro inválido
 ### Síntoma
@@ -67,4 +67,4 @@ Se agregó `tipo` a las dependencias. Se conservan los estados de carga, error y
 La consulta API `tipo=mecanica` devolvió total 0 y el check/compilación pasan. Falta cambiar Todos → mitica → mecanica en la interfaz sin pulsar Actualizar lista y volver a Todos. La herramienta de control visual no pudo verificar la URL de la ventana y se detuvo; no se declara prueba visual.
 
 ### Estado
-Todos los registros de avistamientos, criaturas se pueden observar adecuadamente.
+Se actualizan los tipos sin necesidad de estar presionando "Actualizar lista".
