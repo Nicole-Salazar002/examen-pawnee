@@ -3,8 +3,6 @@ Código: e3238
 Repositorio público propio: https://github.com/Nicole-Salazar002/examen-pawnee
 Rama: examen/323238
 
-> Las causas se identificaron en el código; no se conservaron reproducciones de los fallos antes de aplicar los cambios. Después se verificaron las rutas con la base individual y se completó el recorrido visual descrito en `PRUEBAS-MANUALES.md`. Las respuestas de API están en `evidencias/2026-10-21-pruebas-api.md`.
-
 ## A-01 · No se registra el avistamiento
 ### Síntoma
 El formulario de alta construía el campo `criaturaId`; el contrato del servicio espera `criatura` y rechaza campos desconocidos. No se reprodujo en navegador antes del cambio.
